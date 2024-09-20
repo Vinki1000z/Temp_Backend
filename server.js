@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 5000;
+const port = 3000;
 
 // cors setup
 const cors=require("cors");
@@ -8,6 +8,7 @@ app.use(cors());
 
 
 app.use(express.json());
+// ad
 
 // post endpoints
 app.post('/bfhl', (req, res) => {
