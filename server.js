@@ -37,6 +37,10 @@ app.post('/bfhl', (req, res) => {
 app.get('/bfhl', (req, res) => {
     res.json({ operation_code: 1 });
 });
+// GET Endpoint
+app.get('/', (req, res) => {
+    res.send("Hello");
+});
 
 
 app.listen(port, () => {
