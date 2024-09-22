@@ -79,6 +79,7 @@ app.post('/bfhl', (req, res) => {
     } else {
         response.file_valid = false;
     }
+    console.log(response);
 
     // Send response
     res.json(response);
