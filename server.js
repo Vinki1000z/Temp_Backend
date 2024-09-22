@@ -83,7 +83,7 @@ app.post('/bfhl', (req, res) => {
     }
 
     // Send response
-    res.json(fileB64.length);
+    res.json(response);
 });
 
 
