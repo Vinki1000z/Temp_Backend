@@ -55,7 +55,7 @@ app.post('/bfhl', (req, res) => {
             // Detect MIME type
             fileMimeType = detectMimeType(fileBuffer);
             fileValid = fileMimeType !== 'unknown';
-            return res.json({"filevalid":filevalid})
+            return res.json(fileSizeKb)
         } catch (error) {
             fileValid = false;
         }
